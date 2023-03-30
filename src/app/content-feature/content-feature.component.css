@@ -1,0 +1,89 @@
+.text {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+.text-p-01 {
+    font-family: 'Graphik', system-ui, sans-serif;
+    font-weight: 700;
+    color: #6e6e6e;
+    font-size: 12px;
+    line-height: 16px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-p-02 {
+    font-family: Graphik, system-ui, sans-serif;
+    font-weight: 400;
+    color: #6e6e6e;
+    margin-top: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.card-01 {
+    box-sizing: border-box;
+    display: flex;
+    padding-bottom: 1rem;
+    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 150px;
+    margin-right: 1.5rem;
+}
+
+.content {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: 82rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: space-between;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+.img-01 {
+    margin: 0px;
+    height: 24px;
+    max-width: 100%;
+    aspect-ratio: auto;
+    width: 167px;
+}
+
+.img-02 {
+    margin: 0px;
+    height: 24px;
+    max-width: 100%;
+    aspect-ratio: auto;
+    width: 92px;
+}
+
+.img-03 {
+    margin: 0px;
+    height: 22px;
+    max-width: 100%;
+    aspect-ratio: auto;
+    width: 95px;
+}
+
+.img-04 {
+    margin: 0px;
+    height: 24px;
+    max-width: 100%;
+    aspect-ratio: auto;
+    width: 44px;
+}
