@@ -1,0 +1,100 @@
+
+.header {
+  width: 88%;
+  margin: 0 auto;
+  padding: 25px 61px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.img {
+  margin: 0px;
+  height: auto;
+  max-width: 622px;
+  aspect-ratio: auto;
+  width: 100%;
+}
+.text {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-h1 {
+  font-weight: 600;
+  font-family: 'Graphik', sans-serif;
+  color: #222222;
+  font-size: 54px;
+  line-height: 60px;
+}
+
+.text-h1-02 {
+  font-family: Publico, serif;
+  font-weight: 400;
+  color: #082de6;
+  font-style: italic;
+  letter-spacing: -0.03em;
+}
+
+.text-p-01 {
+  font-family: "Graphik", sans-serif;
+  font-weight: 400;
+  color: #6e6e6e;
+  margin-top: 1rem;
+  line-height: 30px;
+  font-size: 20px;
+}
+.text-p-02 {
+  font-family: Graphik, system-ui, sans-serif;
+  font-weight: 700;
+  color: #222222;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+.btn {
+  background-color: #082de6;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Graphik", sans-serif;
+  width: 100%;
+  padding: 0.5em 1.5em;
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 66px;
+  line-height: 28px;
+  min-width: 210px;
+  max-width: 268px;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .text-h1{
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .header{
+    display: block;
+    padding: 70px 10px;
+    width: auto;
+  }
+  .text-p-01{
+    font-size: 15px;
+  }
+  *{
+  }
+}
