@@ -1,0 +1,42 @@
+.navbar{
+  padding: 24px 120px 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #cecece;
+    font-family: 'Graphik', sans-serif;
+}
+.img2{
+  display: none;
+}
+*{
+  color: #000;
+}
+.dis-flex{
+  display: flex;
+}
+.dis-none2{
+  display:none;
+}
+@media screen and (max-width: 1000px) {
+  .navbar{
+    padding: 20px 15px;
+  }
+  .img1{
+    display: none;
+  }
+  .img2{
+    display: block;
+    width: 24px;
+    height: 100%;
+  }
+  .dis-flex{
+    display: block;
+  }
+  .dis-none{
+    display: none;
+  }
+  .dis-none2{
+    display: block;
+  }
+}
+

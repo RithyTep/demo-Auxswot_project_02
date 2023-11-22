@@ -1,0 +1,58 @@
+<div class="container"  data-aos="fade-up" data-aos-duration="1500">
+    <!-- ==============Posted=================== -->
+  <ul class="cards">
+    <ng-container *ngFor="
+    let data of userData
+      | async
+  ">
+      <li class="card" *ngIf="data.HouseStatus === 'Posted'">
+        <div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar>
+                <img [src]="data.userImage" mat-card-avatar />
+              </div>
+              <mat-card-title>{{ data.userName }}</mat-card-title>
+              <mat-card-subtitle>Admin</mat-card-subtitle>
+            </mat-card-header>
+
+            <div class="zoom-img">
+              <img id="galleryCardImgListingId133527" [src]="data.HouseImage" alt="Photo of House image" loading="lazy"
+                class="" />
+            </div>
+            <div class="btm">
+              <div class="btm-02">
+                <form class="btm-03">
+                  <p class="text-p-01">
+                    <span class="text-p-02">Current price: </span><span style="color: #202c4a" class="text-p-03">
+                      <span>${{ data.discountPrice }}</span> </span><span class="text-p-04">Original price: </span><span
+                      style="color: #202c4a" class="text-p-05">${{ data.originalPrice }}</span>
+                  </p>
+                </form>
+                <span class="text-p-06">
+                  {{ data.HouseAddress }}
+                </span>
+                <p class="text-p-07">{{ data.HouseDescription }}</p>
+              </div>
+            </div>
+            <div *ngIf="(afAuth.authState | async) && data.uid === uid" style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px;
+          ">
+            
+            </div>
+          </mat-card>
+        </div>
+
+        <div *ngIf="data.HouseStatus === 'demo'">
+        </div>
+      </li>
+    </ng-container>
+
+  </ul>
+
+  <!-- ================================= -->
+</div>
+

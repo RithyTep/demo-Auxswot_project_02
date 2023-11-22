@@ -1,0 +1,69 @@
+<app-nav></app-nav>
+    <div class="wrapper">
+        <ng-container *ngFor="
+        let data of userData
+          | async
+      ">
+        <div *ngIf="(afAuth.authState | async) && data.uid === uid">
+               </div>
+
+                <h2 class="text-h2-01">Sign in or create an account</h2>
+                <div class="google">
+                    <div class="css-ks8exq"><button class="btn-01"
+                        mat-raised-button
+                        (click)="loginWithGoogle()">
+                        <!-- g-signin2 ng -->
+                            <div class="dis-flex" data-onsuccess="onSignIn"><img
+                                    src="https://imgdrop.imgix.net/15c9f888b5c14a489e537a039f2f8883.png"
+                                    alt="Google logo" class="img-01"><span
+                                    class="text-01">Continue with Google</span></div>
+                        </button></div>
+               </div>
+               <div class="google">
+                <div class="css-ks8exq"><button class="btn-01">
+                        <div class="dis-flex"><img
+                            src="https://imgdrop.imgix.net/b13d96ac33244eb1a52418e84ac5f889.png"
+                            alt="Facebook logo" class="img-01">Continue with Facebook</div></button></div>
+           </div>
+               
+                <div style="align-items:center;justify-content:space-between" class="line">
+                    <div class="inner-line">
+                        <hr class="inner-line-02">
+                    </div>
+                    <div style="padding:24px">Or</div>
+                    <div class="inner-line">
+                        <hr class="inner-line-02">
+                    </div>
+                </div>
+                <div class="css-xd21or">
+                    <form class="css-iw27wk e1a669rm0">
+                        <div class="input-container css-q78y0h">
+                            <div class="css-2pm9zj"><label for="email-login-input" class="email" style="float:left">Email<span
+                                        class="css-1cgexy4" style="color: red;">*</span></label></div>
+                            <div class="css-18o3tvo"><input type="email" aria-required="true" aria-invalid="true"
+                                    autocomplete="email" required="" value="" inputmode="email"
+                                    placeholder="you@example.com" id="email-login-input" name="email" minlength="1"
+                                    class="input-01">
+                                <p data-testid="error-prompt" class="text-p-01">This field cannot be empty.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="submit"><button class="btn-02" disabled=""
+                                    type="submit" aria-label="">Continue with email</button></div>
+                            <p class="css-17busxr ej0uaij0"><a role="link" href="/reset-password" target="_self"
+                                    aria-label="Opens the forgot password page" class="text-p-02">Forgot your
+                                    password?</a></p>
+                        </div>
+                    </form>
+                    <div class="mt-5">
+                        <p class="text-p-03">By clicking “Continue,” you agree to Opendoor's and its
+                            affiliates’&nbsp;<a role="link" href="https://www.opendoor.com/w/terms" target="_blank"
+                                aria-label="Opens a new page with Opendoor's terms of service" class="css-1fsihyc">Terms
+                                of Service</a>&nbsp;and&nbsp;<a role="link" href="https://www.opendoor.com/w/privacy"
+                                target="_blank" aria-label="Opens a new page with Opendoor's privacy policy"
+                                class="css-1fsihyc">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+        </ng-container>
+    </div>
+    

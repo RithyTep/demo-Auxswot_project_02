@@ -1,0 +1,63 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://imgdrop.imgix.net/df3f4c2922ba4c4dbcc2f8142f9b3dbe.svg"
+        alt=""
+        class="img1"
+      />
+      <img
+        src="https://imgdrop.imgix.net/0bee6386b0ca470b8a00382ed6adbfa3.svg"
+        alt=""
+        class="img2"
+      />
+    </a>
+    <a class="nav-link dis-none2" aria-current="page" href="#">Gallery</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul
+        class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mx-auto"
+        style="--bs-scroll-height: 100px"
+      >
+        <li class="nav-item">
+          <a class="nav-link dis-none" aria-current="page" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dis-flex">
+          <a class="nav-link" href="#">Sell with Exclusives</a>
+          <a class="nav-link" href="admin">admin</a>
+          <a
+            class="nav-link"
+            href="sign-in"
+            *ngIf="(afAuth.authState | async) === null" 
+            color="basic"
+            >Sign in</a
+          >
+          <a
+            class="nav-link"
+            href="sign-in"
+            *ngIf="afAuth.authState | async"
+            (click)="logout()"
+            color="basic"
+            >Sign out</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
